@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="./assets/logo.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+  <!-- Fontawesome -->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css'
+    integrity='sha512-Z0kTB03S7BU+JFU0nw9mjSBcRnZm2Bvm0tzOX9/OuOuz01XQfOpa0w/N9u6Jf2f1OAdegdIPWZ9nIZZ+keEvBw=='
+    crossorigin='anonymous' />
+
+  <!-- Google Material UI Icons -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <title>Osman Dumbuya</title>
+</head>
+
+<body class="bg-white dark:bg-black text-black dark:text-white px-4 sm:px-6 lg:px-8 max-w-[85rem] mx-auto">
+  <!-- Navbar -->
+  <header class="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full text-sm py-3 sm:py-0">
+    <nav class="relative w-full sm:flex sm:items-center sm:justify-between" aria-label="Global">
+      <!-- Flex container -->
+      <div class="flex items-center justify-between">
+        <!-- Logo -->
+        <a class='nav__logo flex-none' href='#' aria-label='Brand'>
+          <img src='./assets/logo.svg' alt='Logo' class='h-10 w-10 sm:h-12 sm:w-12 transition-all delay-200' />
+        </a>
+        <!-- Hamburger menu button -->
+        <div class="sm:hidden">
+          <button type="button"
+            class="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-2 rounded-[4px] border border-onyx dark:border-white font-medium text-black dark:text-white shadow-sm align-middle hover:bg-indigo-200 hover:text-black dark:hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-black dark:focus:ring-offset-white focus:ring-blue transition-all text-sm"
+            data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation"
+            aria-label="Toggle navigation">
+            <svg class="hs-collapse-open:hidden w-4 h-4" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+            </svg>
+            <svg class="hs-collapse-open:block hidden w-4 h-4" width="16" height="16" fill="currentColor"
+              viewBox="0 0 16 16">
+              <path
+                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!-- Menu items -->
+      <div id="navbar-collapse-with-animation"
+        class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block">
+        <div
+          class="flex flex-col gap-y-4 gap-x-0 mt-5 sm:flex-row sm:items-center sm:justify-end sm:gap-y-0 sm:gap-x-7 sm:mt-0 sm:pl-7">
+          <a class="nav__link font-medium text-base text-black dark:text-white hover:text-blue sm:py-6" href="#"
+            aria-current="page">Home</a>
+          <a class="nav__link font-medium text-base text-black dark:text-white hover:text-blue sm:py-6"
+            href="#section--1">About</a>
+          <a class="nav__link font-medium text-base text-black dark:text-white hover:text-blue sm:py-6"
+            href="#section--2">Projects</a>
+          <a class="nav__link flex items-center gap-x-2 font-medium text-base text-black dark:text-white hover:text-blue sm:border-l sm:border-black dark:sm:border-white sm:my-6 sm:pl-6"
+            href="#section--3">
+            <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              viewBox="0 0 16 16">
+              <path
+                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+            </svg>
+            Get in Touch!</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="flex flex-col items-start min-h-screen h-screen p-0 justify-center">
+      <p class='mb-5 ml-[2px] text-base tracking-widest text-blue leading-tight'>
+        Hi, my name is
+      </p>
+      <h1 class='text-[40px] leading-[1.1] text-black dark:text-white font-semibold sm:text-4xl lg:text-6xl'>
+        Osman Dumbuya.
+      </h1>
+      <h2 class='mt-[5px] text-[40px] leading-[1] font-semibold text-onyx dark:text-gray-400'>
+        I build delightful, responsive software.
+      </h2>
+      <p class='max-w-3xl mt-5 text-sm leading-snug text-onyx dark:text-gray-400'>
+        From wires to websites, I'm an electrical engineer turned software
+        developer. I strive to craft software that is accessible and
+        user-friendly to use. Let's collaborate and bring your digital vision to
+        life!
+      </p>
+
+      <!-- CTA buttons -->
+      <div class='mt-7 grid gap-3 w-full sm:inline-flex'>
+        <a class='inline-flex justify-center items-center gap-x-3 text-center bg-blue hover:bg-[#2b88ca] border border-transparent text-sm lg:text-base text-white font-medium rounded-[4px] focus:outline-none focus:ring-2 focus:ring-blue focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:focus:ring-offset-gray-800'
+          href='#section--2'>
+          Check out my work
+          <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 -960 960 960' class='fill-current w-5 h-5'>
+            <path
+              d='M480-200 240-440l42-42 198 198 198-198 42 42-240 240Zm0-253L240-693l42-42 198 198 198-198 42 42-240 240Z' />
+          </svg>
+        </a>
+        <a class='inline-flex justify-center items-center gap-x-3.5 text-blue bg-white dark:bg-black text-sm lg:text-base text-center border border-blue shadow-sm rounded-[4px] focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:hover:border-gray-600 dark:shadow-slate-700/[.7] dark:text-white dark:focus:ring-gray-700 dark:focus:ring-offset-gray-800 hover:bg-gray-50'
+          href='./assets/osman-dumbuya-cv.pdf' download>
+          Resume
+          <svg xmlns='http://www.w3.org/2000/svg' class='fill-current w-5 h-5' viewBox='0 -960 960 960'
+            stroke='currentColor'>
+            <path
+              d='M220-160q-24 0-42-18t-18-42v-143h60v143h520v-143h60v143q0 24-18 42t-42 18H220Zm260-153L287-506l43-43 120 120v-371h60v371l120-120 43 43-193 193Z' />
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="sm:px-6 lg:px-8 py-16" id="section--1">
+      <div class='flex flex-col md:grid md:grid-cols-3 gap-12 md:gap-8 xl:gap-20 md:items-center'>
+        <div class='left col-span-2'>
+          <div class='description'>
+            <h2
+              class='mt-[10px] mb-10 text-3xl font-bold text-black sm:text-4xl lg:text-6xl lg:leading-tight dark:text-white'>
+              A little about me
+            </h2>
+            <p class='mb-4 text-onyx dark:text-gray-300 text-sm'>
+              Hey there! I'm Osman, a web developer who's passionate about
+              bringing ideas to life online. During the pandemic lockdown in
+              2020, I rekindled my love for coding, which I initially disliked
+              during my degree. Seeing my code come alive on a website was truly
+              exhilarating!
+            </p>
+            <p class='mb-4 text-onyx dark:text-gray-300 text-sm'>
+              Now, I am a graduate of a
+              <span class='text-blue'>
+                Front-end Web Development Boot Camp
+              </span>
+              , and have extensive experience in building web applications using
+              a variety of technologies. My current focus is on developing
+              inclusive and accessible digital experiences with ReactJs.
+            </p>
+            <p class='mb-4 text-onyx dark:text-gray-300 text-sm'>
+              As an individual who thrives on challenges, I am constantly
+              <span class='text-blue'>
+                seeking new opportunities to learn and grow
+              </span>
+              . Below, you'll find a snapshot of the technologies I have been
+              actively working with.
+            </p>
+          </div>
+
+          <ul class='skills mt-5 grid grid-cols-skills-grid overflow-hidden md:flex md:justify-around'>
+            <li class='flex items-center flex-col justify-center py-2 px-2'>
+              <i class='fa-brands fa-html5 text-blue text-5xl md:text-6xl' alt='HTML Icon'></i>
+              <span class='text-xs text-onyx dark:text-gray-300'>HTML 5</span>
+            </li>
+            <li class='flex items-center flex-col justify-center py-2 px-2'>
+              <i class='fa-brands fa-css3-alt text-blue text-5xl md:text-6xl' alt='HTML Icon'></i>
+              <span class='text-xs text-onyx dark:text-gray-300'>CSS 3</span>
+            </li>
+            <li class='flex items-center flex-col justify-center py-2 px-2'>
+              <i class='fa-brands fa-square-js text-blue text-5xl md:text-6xl' alt='HTML Icon'></i>
+              <span class='text-xs text-onyx dark:text-gray-300'>JavaScript</span>
+            </li>
+            <li class='flex items-center flex-col justify-center py-2 px-2'>
+              <i class='fa-brands fa-react text-blue text-5xl md:text-6xl' alt='HTML Icon'></i>
+              <span class='text-xs text-onyx dark:text-gray-300'>React</span>
+            </li>
+            <li class='flex items-center flex-col justify-center py-2 px-2'>
+              <i class='fa-brands fa-node text-blue text-5xl md:text-6xl' alt='HTML Icon'></i>
+              <span class='text-xs text-onyx dark:text-gray-300'>NodeJs</span>
+            </li>
+            <li class='flex items-center flex-col justify-center py-2 px-2'>
+              <i class='fa-brands fa-git-alt text-blue text-5xl md:text-6xl' alt='HTML Icon'></i>
+              <span class='text-xs text-onyx dark:text-gray-300'>Git</span>
+            </li>
+          </ul>
+        </div>
+        <!-- End Col -->
+
+        <div class="relative grid place-content-center">
+          <img class="img rounded-[4px] object-cover" src="./assets/images/osman-cropped-no-bg.png"
+            alt="Image of Osman with a baseball hat.">
+          <div
+            class="absolute inset-0 -z-[1] bg-gradient-to-tr from-gray-200 via-white to-white rounded-[4px] dark:from-slate-800 dark:via-slate-900/0 dark:to-slate-900/0">
+          </div>
+
+          <!-- SVG-->
+          <div class="absolute bottom-0 left-0">
+            <svg class="w-2/3 ml-auto h-auto text-onyx dark:text-white" width="630" height="451" viewBox="0 0 630 451"
+              fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="531" y="352" width="99" height="99" fill="currentColor" />
+              <rect x="140" y="352" width="106" height="99" fill="currentColor" />
+              <rect x="482" y="402" width="64" height="49" fill="currentColor" />
+              <rect x="433" y="402" width="63" height="49" fill="currentColor" />
+              <rect x="384" y="352" width="49" height="50" fill="currentColor" />
+              <rect x="531" y="328" width="50" height="50" fill="currentColor" />
+              <rect x="99" y="303" width="49" height="58" fill="currentColor" />
+              <rect x="99" y="352" width="49" height="50" fill="currentColor" />
+              <rect x="99" y="392" width="49" height="59" fill="currentColor" />
+              <rect x="44" y="402" width="66" height="49" fill="currentColor" />
+              <rect x="234" y="402" width="62" height="49" fill="currentColor" />
+              <rect x="334" y="303" width="50" height="49" fill="currentColor" />
+              <rect x="581" width="49" height="49" fill="currentColor" />
+              <rect x="581" width="49" height="64" fill="currentColor" />
+              <rect x="482" y="123" width="49" height="49" fill="currentColor" />
+              <rect x="507" y="124" width="49" height="24" fill="currentColor" />
+              <rect x="531" y="49" width="99" height="99" fill="currentColor" />
+            </svg>
+          </div>
+        </div>
+        <!-- End Col -->
+    </section>
+
+    <!-- Projects Section -->
+    <section class="sm:px-6 lg:px-8 py-16" id="section--2">
+      <h2
+        class='mt-[10px] mb-10 text-3xl font-bold text-black dark:text-white sm:text-4xl lg:text-6xl lg:leading-tight'>
+        Things I've built
+      </h2>
+      <!-- Project Cards Container -->
+      <div class='grid sm:grid-cols-2 lg:grid-cols-3 gap-6'>
+        <!-- Card -->
+        <div class='project-card group flex flex-col h-full bg-white shadow-2xl rounded-[4px] dark:bg-onyx'>
+          <div class='p-4 md:p-6'>
+            <span class='block mb-1 text-xs font-semibold uppercase text-blue'>
+              TravelInfo
+            </span>
+            <h3 class='text-xl font-semibold text-onyx dark:text-gray-300'>
+              Travel Information Finder
+            </h3>
+            <p class='mt-3 text-sm text-onyx dark:text-gray-300'>
+              A one stop travel information web app to take you around the world and
+              back in a couple of clicks. View information such as weather forecast,
+              latest local news, most visited places and geographical details of
+              your destination. Convert between different currencies and see what
+              other travellers have to say about their experience of the location.
+            </p>
+            <ul class='mt-8 flex gap-3 text-xs text-onyx dark:text-gray-300'>
+              <li class='tech-icon'>Tailwind</li>
+              <li class='tech-icon'>JavaScript</li>
+              <li class='tech-icon'>React</li>
+              <li class='tech-icon'>Node</li>
+            </ul>
+          </div>
+          <div
+            class='mt-auto flex border-t border-gray-300 divide-x divide-gray-300 dark:border-gray-600 dark:divide-gray-600'>
+            <a class='w-full py-3 px-4 inline-flex justify-center items-center gap-2 rounded-bl-[4px] font-medium bg-white shadow-sm align-middle hover:bg-gray-50 focus:outline-none transition-all text-sm sm:p-4 dark:bg-onyx dark:hover:bg-[#313531]'
+              href='https://spacepineapple.github.io/infotravel-travel-information/'>
+              <span class='material-symbols-outlined text-blue w-6 h-6'>
+                open_in_new
+              </span>
+            </a>
+            <a class='w-full py-3 px-4 inline-flex justify-center items-center gap-2 rounded-br-[4px] font-medium bg-white shadow-sm align-middle hover:bg-gray-50 focus:outline-none transition-all text-sm sm:p-4 dark:bg-onyx dark:hover:bg-[#313531]'
+              href='https://github.com/OsmanTolo/infotravel-travel-information'>
+              <span class='material-symbols-outlined text-blue w-6 h-6'>
+                folder
+              </span>
+            </a>
+          </div>
+        </div>
+        <!-- Card -->
+        <div class='project-card group flex flex-col h-full bg-white shadow-2xl rounded-[4px] dark:bg-onyx'>
+          <div class='p-4 md:p-6'>
+            <span class='block mb-1 text-xs font-semibold uppercase text-blue'>
+              JustBuy
+            </span>
+            <h3 class='text-xl font-semibold text-onyx dark:text-gray-300'>
+              eCommerce Store
+            </h3>
+            <p class='mt-3 text-sm text-onyx dark:text-gray-300'>
+              A user-friendly and minimalisitc e-commerce site built with ReactJS. Browse and search for products from a
+              range of categories. Each product listing includes
+              information such as the product name, description, price, and images. Customers can add products to their
+              shopping cart and checkout when they are ready to purchase.
+            </p>
+            <ul class='mt-8 flex gap-3 text-xs text-onyx dark:text-gray-300'>
+              <li class='tech-icon'>React</li>
+              <li class='tech-icon'>Redux</li>
+              <li class='tech-icon'>Axios</li>
+              <li class='tech-icon'>Node</li>
+            </ul>
+          </div>
+          <div
+            class='mt-auto flex border-t border-gray-300 divide-x divide-gray-300 dark:border-gray-600 dark:divide-gray-600'>
+            <a class='w-full py-3 px-4 inline-flex justify-center items-center gap-2 rounded-bl-[4px] font-medium bg-white shadow-sm align-middle hover:bg-gray-50 focus:outline-none transition-all text-sm sm:p-4 dark:bg-onyx dark:hover:bg-[#313531]'
+              href='https://spacepineapple.github.io/infotravel-travel-information/'>
+              <span class='material-symbols-outlined text-blue w-6 h-6'>
+                open_in_new
+              </span>
+            </a>
+            <a class='w-full py-3 px-4 inline-flex justify-center items-center gap-2 rounded-br-[4px] font-medium bg-white shadow-sm align-middle hover:bg-gray-50 focus:outline-none transition-all text-sm sm:p-4 dark:bg-onyx dark:hover:bg-[#313531]'
+              href='https://github.com/OsmanTolo/infotravel-travel-information'>
+              <span class='material-symbols-outlined text-blue w-6 h-6'>
+                folder
+              </span>
+            </a>
+          </div>
+        </div>
+        <!-- Card -->
+        <div class='project-card group flex flex-col h-full bg-white shadow-2xl rounded-[4px] dark:bg-onyx'>
+          <div class='p-4 md:p-6'>
+            <span class='block mb-1 text-xs font-semibold uppercase text-blue'>
+              TeamView
+            </span>
+            <h3 class='text-xl font-semibold text-onyx dark:text-gray-300'>
+              CLI Profile Generator
+            </h3>
+            <p class='mt-3 text-sm text-onyx dark:text-gray-300'>
+              A command line interface (CLI) app that takes user-fed employee information and generates a static HTML
+              webpage to display a summary of each employee for
+              quick access to their emails and GitHub profiles. The application will run in the users CLI of their
+              integrated development environment (IDE) using NodeJs.
+            </p>
+            <ul class='mt-8 flex gap-3 text-xs text-onyx dark:text-gray-300'>
+              <li class='tech-icon'>JavaScript</li>
+              <li class='tech-icon'>NodeJs</li>
+              <li class='tech-icon'>Inquirer</li>
+              <li class='tech-icon'>Async</li>
+            </ul>
+          </div>
+          <div
+            class='mt-auto flex border-t border-gray-300 divide-x divide-gray-300 dark:border-gray-600 dark:divide-gray-600'>
+            <a class='w-full py-3 px-4 inline-flex justify-center items-center gap-2 rounded-bl-[4px] font-medium bg-white shadow-sm align-middle hover:bg-gray-50 focus:outline-none transition-all text-sm sm:p-4 dark:bg-onyx dark:hover:bg-[#313531]'
+              href='https://spacepineapple.github.io/infotravel-travel-information/'>
+              <span class='material-symbols-outlined text-blue w-6 h-6'>
+                open_in_new
+              </span>
+            </a>
+            <a class='w-full py-3 px-4 inline-flex justify-center items-center gap-2 rounded-br-[4px] font-medium bg-white shadow-sm align-middle hover:bg-gray-50 focus:outline-none transition-all text-sm sm:p-4 dark:bg-onyx dark:hover:bg-[#313531]'
+              href='https://github.com/OsmanTolo/team_profile_generator-javascript-nodeJs'>
+              <span class='material-symbols-outlined text-blue w-6 h-6'>
+                folder
+              </span>
+            </a>
+          </div>
+        </div>
+        <!-- Card -->
+        <div class='project-card group flex flex-col h-full bg-white shadow-2xl rounded-[4px] dark:bg-onyx'>
+          <div class='p-4 md:p-6'>
+            <span class='block mb-1 text-xs font-semibold uppercase text-blue'>
+              WeatherNow
+            </span>
+            <h3 class='text-xl font-semibold text-onyx dark:text-gray-300'>
+              Weather Forecaster
+            </h3>
+            <p class='mt-3 text-sm text-onyx dark:text-gray-300'>
+              Another weather forecast application dashboard for the web. The app allows a user to view current and the
+              next five days weather weather forecast for
+              any city. Upon searching for a city, the current weather conditions for that city is presented from a
+              query to OpenWeather API,
+              along with the current date using Moment.js library.
+            </p>
+            <ul class='mt-8 flex gap-3 text-xs text-onyx dark:text-gray-300'>
+              <li class='tech-icon'>JavaScript</li>
+              <li class='tech-icon'>jQuery</li>
+              <li class='tech-icon'>RestAPI</li>
+              <li class='tech-icon'>Moment.js</li>
+            </ul>
+          </div>
+          <div
+            class='mt-auto flex border-t border-gray-300 divide-x divide-gray-300 dark:border-gray-600 dark:divide-gray-600'>
+            <a class='w-full py-3 px-4 inline-flex justify-center items-center gap-2 rounded-bl-[4px] font-medium bg-white shadow-sm align-middle hover:bg-gray-50 focus:outline-none transition-all text-sm sm:p-4 dark:bg-onyx dark:hover:bg-[#313531]'
+              href='https://osmantolo.github.io/weather_now-apis-javascript/'>
+              <span class='material-symbols-outlined text-blue w-6 h-6'>
+                open_in_new
+              </span>
+            </a>
+            <a class='w-full py-3 px-4 inline-flex justify-center items-center gap-2 rounded-br-[4px] font-medium bg-white shadow-sm align-middle hover:bg-gray-50 focus:outline-none transition-all text-sm sm:p-4 dark:bg-onyx dark:hover:bg-[#313531]'
+              href='https://github.com/OsmanTolo/weather_now-apis-javascript'>
+              <span class='material-symbols-outlined text-blue w-6 h-6'>
+                folder
+              </span>
+            </a>
+          </div>
+        </div>
+        <!-- Card -->
+        <div class='project-card group flex flex-col h-full bg-white shadow-2xl rounded-[4px] dark:bg-onyx'>
+          <div class='p-4 md:p-6'>
+            <span class='block mb-1 text-xs font-semibold uppercase text-blue'>
+              Social being
+            </span>
+            <h3 class='text-xl font-semibold text-onyx dark:text-gray-300'>
+              CRUD Social Feed
+            </h3>
+            <p class='mt-3 text-sm text-onyx dark:text-gray-300'>
+              A social media feed page that performs the four basic CRUD operations of a software application - Create,
+              Read, Update
+              and Delete. Users will be able to create data (i.e. the post), have access to the data in the UI by
+              reading the data,
+              update or edit the data, and delete the data.
+            </p>
+            <ul class='mt-8 flex gap-3 text-xs text-onyx dark:text-gray-300'>
+              <li class='tech-icon'>JavaScript</li>
+              <li class='tech-icon'>HTML</li>
+              <li class='tech-icon'>CSS</li>
+              <li class='tech-icon'>Local Storage</li>
+            </ul>
+          </div>
+          <div
+            class='mt-auto flex border-t border-gray-300 divide-x divide-gray-300 dark:border-gray-600 dark:divide-gray-600'>
+            <a class='w-full py-3 px-4 inline-flex justify-center items-center gap-2 rounded-bl-[4px] font-medium bg-white shadow-sm align-middle hover:bg-gray-50 focus:outline-none transition-all text-sm sm:p-4 dark:bg-onyx dark:hover:bg-[#313531]'
+              href='https://osmantolo.github.io/CRUD-social-feed-app/'>
+              <span class='material-symbols-outlined text-blue w-6 h-6'>
+                open_in_new
+              </span>
+            </a>
+            <a class='w-full py-3 px-4 inline-flex justify-center items-center gap-2 rounded-br-[4px] font-medium bg-white shadow-sm align-middle hover:bg-gray-50 focus:outline-none transition-all text-sm sm:p-4 dark:bg-onyx dark:hover:bg-[#313531]'
+              href='https://github.com/OsmanTolo/CRUD-social-feed-app'>
+              <span class='material-symbols-outlined text-blue w-6 h-6'>
+                folder
+              </span>
+            </a>
+          </div>
+        </div>
+        <!-- Card -->
+        <div class='project-card group flex flex-col h-full bg-white shadow-2xl rounded-[4px] dark:bg-onyx'>
+          <div class='p-4 md:p-6'>
+            <span class='block mb-1 text-xs font-semibold uppercase text-blue'>
+              Quiz Bee
+            </span>
+            <h3 class='text-xl font-semibold text-onyx dark:text-gray-300'>
+              JS Code Quiz App
+            </h3>
+            <p class='mt-3 text-sm text-onyx dark:text-gray-300'>
+              A multiple choice quiz that lives on the browser. The user is a presented with various JavaScript
+              questions with multiple choice answers to choose from. When answer is clicked, the next question appears.
+              If the answer
+              clicked was incorrect then subtract time from the clock. The quiz will end when all questions are
+              answered, or the player
+              run out of time.
+            </p>
+            <ul class='mt-8 flex gap-3 text-xs text-onyx dark:text-gray-300'>
+              <li class='tech-icon'>JavaScript</li>
+              <li class='tech-icon'>HTML</li>
+              <li class='tech-icon'>CSS</li>
+              <li class='tech-icon'>Web APIs</li>
+            </ul>
+          </div>
+          <div
+            class='mt-auto flex border-t border-gray-300 divide-x divide-gray-300 dark:border-gray-600 dark:divide-gray-600'>
+            <a class='w-full py-3 px-4 inline-flex justify-center items-center gap-2 rounded-bl-[4px] font-medium bg-white shadow-sm align-middle hover:bg-gray-50 focus:outline-none transition-all text-sm sm:p-4 dark:bg-onyx dark:hover:bg-[#313531]'
+              href='https://osmantolo.github.io/code_quiz-web_apis-javascript/'>
+              <span class='material-symbols-outlined text-blue w-6 h-6'>
+                open_in_new
+              </span>
+            </a>
+            <a class='w-full py-3 px-4 inline-flex justify-center items-center gap-2 rounded-br-[4px] font-medium bg-white shadow-sm align-middle hover:bg-gray-50 focus:outline-none transition-all text-sm sm:p-4 dark:bg-onyx dark:hover:bg-[#313531]'
+              href='https://github.com/OsmanTolo/code_quiz-web_apis-javascript'>
+              <span class='material-symbols-outlined text-blue w-6 h-6'>
+                folder
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Button -->
+      <div class="text-center">
+        <a class='inline-flex justify-center items-center gap-x-3 text-center bg-blue hover:bg-[#2b88ca] border border-transparent text-sm max-sm:w-full lg:text-base text-white font-medium rounded-[4px] focus:outline-none focus:ring-2 focus:ring-blue focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:focus:ring-offset-gray-800 sm:mt-20 mt-16'
+          href='https://github.com/OsmanTolo?tab=repositories'>
+          View more
+          <svg class="w-2.5 h-2.5" width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <script src="./js/script.js"></script>
+  <script src="./node_modules/preline/dist/preline.js"></script>
+</body>
+
+</html>
