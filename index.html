@@ -76,14 +76,14 @@
         Hi, my name is
       </p>
       <h1
-        class='text-[40px] sm:text-6xl lg:text-[80px] leading-[1.1] text-transparent bg-clip-text bg-gradient-to-r from-white to-blue font-bold'>
+        class='text-[40px] sm:text-6xl lg:text-[80px] leading-[1.1] text-transparent bg-clip-text bg-gradient-to-r from-black dark:from-white dark:to-blue to-blue font-bold'>
         Osman Dumbuya.
       </h1>
       <h2
-        class='mt-[5px] text-[40px] sm:text-6xl lg:text-[80px] leading-[1] font-semibold text-onyx dark:text-gray-400'>
+        class='mt-[5px] text-[40px] sm:text-6xl lg:text-[80px] leading-[1] font-semibold text-onyx dark:text-gray-300'>
         I craft delightful, responsive software.
       </h2>
-      <p class='max-w-[540px] mt-5 text-sm sm:text-lg lg:text-xl leading-snug text-onyx dark:text-gray-400'>
+      <p class='max-w-[540px] mt-5 text-sm sm:text-lg lg:text-xl leading-snug text-onyx dark:text-gray-300'>
         From wires to websites, I'm an electrical engineer turned software
         developer. I strive to deliver software that is accessible and
         user-friendly to use. Let's collaborate and bring your digital vision to
@@ -113,22 +113,22 @@
     </section>
 
     <!-- About Section -->
-    <section class="sm:px-6 lg:px-8 py-16" id="section--1">
-      <div class='flex flex-col md:grid md:grid-cols-3 gap-12 md:gap-8 xl:gap-20 md:items-center'>
+    <section class="py-16" id="section--1">
+      <h2
+        class='mt-[10px] mb-10 text-3xl font-bold text-black sm:text-4xl lg:text-5xl lg:leading-tight dark:text-white'>
+        A little about me
+      </h2>
+      <div class='flex flex-col md:grid md:grid-cols-3 gap-12 md:gap-16 xl:gap-20 md:items-center'>
         <div class='left col-span-2'>
-          <div class='description'>
-            <h2
-              class='mt-[10px] mb-10 text-3xl font-bold text-black sm:text-4xl lg:text-6xl lg:leading-tight dark:text-white'>
-              A little about me
-            </h2>
-            <p class='mb-4 text-onyx dark:text-gray-300 text-sm'>
+          <div class='description text-onyx dark:text-gray-400 text-sm sm:text-md lg:text-xl'>
+            <p class='mb-4'>
               Hey there! I'm Osman, a web developer who's passionate about
               bringing ideas to life online. During the pandemic lockdown in
               2020, I rekindled my love for coding, which I initially disliked
               during my degree. Seeing my code come alive on a website was truly
               exhilarating!
             </p>
-            <p class='mb-4 text-onyx dark:text-gray-300 text-sm'>
+            <p class='mb-4'>
               Now, I am a graduate of a
               <span class='text-blue'>
                 Front-end Web Development Boot Camp
@@ -137,12 +137,11 @@
               a variety of technologies. My current focus is on developing
               inclusive and accessible digital experiences with ReactJs.
             </p>
-            <p class='mb-4 text-onyx dark:text-gray-300 text-sm'>
+            <p class='mb-4'>
               As an individual who thrives on challenges, I am constantly
               <span class='text-blue'>
-                seeking new opportunities to learn and grow
-              </span>
-              . Below, you'll find a snapshot of the technologies I have been
+                seeking new opportunities to learn and grow</span>. Below, you'll find a snapshot of the technologies I
+              have been
               actively working with.
             </p>
           </div>
@@ -208,38 +207,42 @@
           </div>
         </div>
         <!-- End Col -->
+      </div>
     </section>
 
     <!-- Projects Section -->
-    <section class="sm:px-6 lg:px-8 py-16" id="section--2">
+    <section class="py-16" id="section--2">
       <h2
-        class='mt-[10px] mb-10 text-3xl font-bold text-black dark:text-white sm:text-4xl lg:text-6xl lg:leading-tight'>
+        class='mt-[10px] mb-10 text-3xl font-bold text-black dark:text-white sm:text-4xl lg:text-5xl lg:leading-tight'>
         Things I've built
       </h2>
       <!-- Project Cards Container -->
       <div class='grid sm:grid-cols-2 lg:grid-cols-3 gap-6'>
         <!-- Card -->
-        <div class='project-card group flex flex-col h-full bg-white shadow-2xl rounded-[4px] dark:bg-onyx'>
+        <div
+          class='project-card group flex flex-col h-full bg-white shadow-xl rounded-[4px] hover:shadow-2xl dark:bg-onyx'>
           <div class='p-4 md:p-6'>
-            <span class='block mb-1 text-xs font-semibold uppercase text-blue'>
+            <span class='header block mb-1 text-xs font-semibold uppercase text-blue'>
               TravelInfo
             </span>
-            <h3 class='text-xl font-semibold text-onyx dark:text-gray-300'>
-              Travel Information Finder
-            </h3>
-            <p class='mt-3 text-sm text-onyx dark:text-gray-300'>
-              A one stop travel information web app to take you around the world and
-              back in a couple of clicks. View information such as weather forecast,
-              latest local news, most visited places and geographical details of
-              your destination. Convert between different currencies and see what
-              other travellers have to say about their experience of the location.
-            </p>
-            <ul class='mt-8 flex gap-3 text-xs text-onyx dark:text-gray-300'>
-              <li class='tech-icon'>Tailwind</li>
-              <li class='tech-icon'>JavaScript</li>
-              <li class='tech-icon'>React</li>
-              <li class='tech-icon'>Node</li>
-            </ul>
+            <div class="flex flex-col justify-between">
+              <h3 class='text-[22px] font-semibold text-onyx dark:text-gray-300'>
+                Travel Information Finder
+              </h3>
+              <p class='mt-3 text-sm text-onyx dark:text-gray-300'>
+                A one stop travel information web app to take you around the world and
+                back in a couple of clicks. View information such as weather forecast,
+                latest local news, most visited places and geographical details of
+                your destination. Convert between different currencies and see what
+                other travellers have to say about their experience of the location.
+              </p>
+              <ul class='mt-8 flex gap-3 text-xs text-onyx dark:text-gray-300'>
+                <li class='tech-icon'>Tailwind</li>
+                <li class='tech-icon'>JavaScript</li>
+                <li class='tech-icon'>React</li>
+                <li class='tech-icon'>Node</li>
+              </ul>
+            </div>
           </div>
           <div
             class='mt-auto flex border-t border-gray-300 divide-x divide-gray-300 dark:border-gray-600 dark:divide-gray-600'>
@@ -258,26 +261,31 @@
           </div>
         </div>
         <!-- Card -->
-        <div class='project-card group flex flex-col h-full bg-white shadow-2xl rounded-[4px] dark:bg-onyx'>
+        <div
+          class='project-card group flex flex-col h-full bg-white shadow-xl rounded-[4px] hover:shadow-2xl dark:bg-onyx'>
           <div class='p-4 md:p-6'>
             <span class='block mb-1 text-xs font-semibold uppercase text-blue'>
               JustBuy
             </span>
-            <h3 class='text-xl font-semibold text-onyx dark:text-gray-300'>
-              eCommerce Store
-            </h3>
-            <p class='mt-3 text-sm text-onyx dark:text-gray-300'>
-              A user-friendly and minimalisitc e-commerce site built with ReactJS. Browse and search for products from a
-              range of categories. Each product listing includes
-              information such as the product name, description, price, and images. Customers can add products to their
-              shopping cart and checkout when they are ready to purchase.
-            </p>
-            <ul class='mt-8 flex gap-3 text-xs text-onyx dark:text-gray-300'>
-              <li class='tech-icon'>React</li>
-              <li class='tech-icon'>Redux</li>
-              <li class='tech-icon'>Axios</li>
-              <li class='tech-icon'>Node</li>
-            </ul>
+            <div class="flex flex-col justify-between">
+              <h3 class='text-[22px] font-semibold text-onyx dark:text-gray-300'>
+                eCommerce Store
+              </h3>
+              <p class='mt-3 text-sm text-onyx dark:text-gray-300'>
+                A user-friendly and minimalisitc e-commerce site built with ReactJS. Browse and search for products from
+                a
+                range of categories. Each product listing includes
+                information such as the product name, description, price, and images. Customers can add products to
+                their
+                shopping cart and checkout when they are ready to purchase.
+              </p>
+              <ul class='mt-8 flex gap-3 text-xs text-onyx dark:text-gray-300'>
+                <li class='tech-icon'>React</li>
+                <li class='tech-icon'>Redux</li>
+                <li class='tech-icon'>Axios</li>
+                <li class='tech-icon'>Node</li>
+              </ul>
+            </div>
           </div>
           <div
             class='mt-auto flex border-t border-gray-300 divide-x divide-gray-300 dark:border-gray-600 dark:divide-gray-600'>
@@ -296,29 +304,32 @@
           </div>
         </div>
         <!-- Card -->
-        <div class='project-card group flex flex-col h-full bg-white shadow-2xl rounded-[4px] dark:bg-onyx'>
-          <div class='p-4 md:p-6'>
+        <div
+          class='project-card group flex flex-col h-full bg-white shadow-xl rounded-[4px] hover:shadow-2xl dark:bg-onyx'>
+          <div class='header h-full p-4 md:p-6'>
             <span class='block mb-1 text-xs font-semibold uppercase text-blue'>
               TeamView
             </span>
-            <h3 class='text-xl font-semibold text-onyx dark:text-gray-300'>
-              CLI Profile Generator
-            </h3>
-            <p class='mt-3 text-sm text-onyx dark:text-gray-300'>
-              A command line interface (CLI) app that takes user-fed employee information and generates a static HTML
-              webpage to display a summary of each employee for
-              quick access to their emails and GitHub profiles. The application will run in the users CLI of their
-              integrated development environment (IDE) using NodeJs.
-            </p>
-            <ul class='mt-8 flex gap-3 text-xs text-onyx dark:text-gray-300'>
-              <li class='tech-icon'>JavaScript</li>
-              <li class='tech-icon'>NodeJs</li>
-              <li class='tech-icon'>Inquirer</li>
-              <li class='tech-icon'>Async</li>
-            </ul>
+            <div class="flex flex-col justify-center">
+              <h3 class='text-[22px] font-semibold text-onyx dark:text-gray-300'>
+                CLI Profile Generator
+              </h3>
+              <p class='mt-3 text-sm text-onyx dark:text-gray-300'>
+                A command line interface (CLI) app that takes user-fed employee information and generates a static HTML
+                webpage to display a summary of each employee for
+                quick access to their emails and GitHub profiles. The application will run in the users CLI of their
+                integrated development environment (IDE) using NodeJs.
+              </p>
+              <ul class='mt-8 flex gap-3 text-xs text-onyx dark:text-gray-300'>
+                <li class='tech-icon'>JavaScript</li>
+                <li class='tech-icon'>NodeJs</li>
+                <li class='tech-icon'>Inquirer</li>
+                <li class='tech-icon'>Async</li>
+              </ul>
+            </div>
           </div>
           <div
-            class='mt-auto flex border-t border-gray-300 divide-x divide-gray-300 dark:border-gray-600 dark:divide-gray-600'>
+            class='footer mt-auto flex border-t border-gray-300 divide-x divide-gray-300 dark:border-gray-600 dark:divide-gray-600'>
             <a class='w-full py-3 px-4 inline-flex justify-center items-center gap-2 rounded-bl-[4px] font-medium bg-white shadow-sm align-middle hover:bg-gray-50 focus:outline-none transition-all text-sm sm:p-4 dark:bg-onyx dark:hover:bg-[#313531]'
               href='https://spacepineapple.github.io/infotravel-travel-information/'>
               <span class='material-symbols-outlined text-blue w-6 h-6'>
@@ -334,12 +345,13 @@
           </div>
         </div>
         <!-- Card -->
-        <div class='project-card group flex flex-col h-full bg-white shadow-2xl rounded-[4px] dark:bg-onyx'>
+        <div
+          class='project-card group flex flex-col h-full bg-white shadow-xl rounded-[4px] hover:shadow-2xl dark:bg-onyx'>
           <div class='p-4 md:p-6'>
             <span class='block mb-1 text-xs font-semibold uppercase text-blue'>
               WeatherNow
             </span>
-            <h3 class='text-xl font-semibold text-onyx dark:text-gray-300'>
+            <h3 class='text-[22px] font-semibold text-onyx dark:text-gray-300'>
               Weather Forecaster
             </h3>
             <p class='mt-3 text-sm text-onyx dark:text-gray-300'>
@@ -373,12 +385,13 @@
           </div>
         </div>
         <!-- Card -->
-        <div class='project-card group flex flex-col h-full bg-white shadow-2xl rounded-[4px] dark:bg-onyx'>
+        <div
+          class='project-card group flex flex-col h-full bg-white shadow-xl rounded-[4px] hover:shadow-2xl dark:bg-onyx'>
           <div class='p-4 md:p-6'>
             <span class='block mb-1 text-xs font-semibold uppercase text-blue'>
               Social being
             </span>
-            <h3 class='text-xl font-semibold text-onyx dark:text-gray-300'>
+            <h3 class='text-[22px] font-semibold text-onyx dark:text-gray-300'>
               CRUD Social Feed
             </h3>
             <p class='mt-3 text-sm text-onyx dark:text-gray-300'>
@@ -412,7 +425,8 @@
           </div>
         </div>
         <!-- Card -->
-        <div class='project-card group flex flex-col h-full bg-white shadow-2xl rounded-[4px] dark:bg-onyx'>
+        <div
+          class='project-card group flex flex-col h-full bg-white shadow-xl rounded-[4px] hover:shadow-2xl dark:bg-onyx'>
           <div class='p-4 md:p-6'>
             <span class='block mb-1 text-xs font-semibold uppercase text-blue'>
               Quiz Bee
@@ -466,12 +480,13 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="sm:px-6 lg:px-8 py-16" id="section--3">
+    <section class="py-16 mt-0 mb-24 lg:mr-auto lg:ml-auto" id="section--3">
       <h2
-        class='mt-[10px] mb-10 text-3xl text-center font-bold text-black dark:text-white sm:text-4xl lg:text-6xl lg:leading-tight'>
+        class='mt-[10px] mb-10 text-3xl text-center font-bold text-black dark:text-white sm:text-4xl lg:text-5xl lg:leading-tight'>
         Get in Touch
       </h2>
-      <p class='mb-4 text-onyx text-center  dark:text-gray-300 text-sm'>Got a project in mind or just want to chat? Drop
+      <p class='mb-4 text-onyx text-center dark:text-gray-400 text-sm sm:text-md lg:text-xl'>Got a project in mind or
+        just want to chat? Drop
         me a line
         via email below or
         find
@@ -482,8 +497,8 @@
         <!-- Grid -->
         <div class="grid gap-6 sm:grid-cols-3">
           <!-- Card -->
-          <a class="group flex flex-col bg-white shadow-sm rounded-[4px] hover:shadow-md transition dark:bg-onyx"
-            href="#">
+          <a class="group flex flex-col bg-white rounded-[4px] shadow-xl hover:shadow-2xl transition dark:bg-onyx"
+            href="https://www.linkedin.com/in/osman-dumbuya-148581108/">
             <div class="p-4">
               <div class="flex">
                 <svg class="shrink-0 w-6 h-6 mt-1" fill="#0094ff" height="200px" width="200px" version="1.1"
@@ -513,8 +528,8 @@
           <!-- End Card -->
 
           <!-- Card -->
-          <a class="group flex flex-col bg-white shadow-sm rounded-[4px] hover:shadow-md transition dark:bg-onyx"
-            href="#">
+          <a class="group flex flex-col bg-white shadow-xl rounded-[4px] hover:shadow-2xl transition dark:bg-onyx"
+            href="https://twitter.com/OsmanTolo_" target=”_blank”>
             <div class="p-4 md:p-5">
               <div class="flex">
                 <svg class="shrink-0 w6 h-6 mt-1" viewBox="0 -2 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
@@ -552,8 +567,8 @@
           <!-- End Card -->
 
           <!-- Card -->
-          <a class="group flex flex-col bg-white shadow-sm rounded-[4px] hover:shadow-md transition dark:bg-onyx"
-            href="#">
+          <a class="group flex flex-col bg-white shadow-xl rounded-[4px] hover:shadow-2xl transition dark:bg-onyx"
+            href="https://github.com/OsmanTolo" target=”_blank”>
             <div class="p-4 md:p-5">
               <div class="flex">
                 <svg class="shrink-0 w6 h-6 mt-1" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
@@ -597,7 +612,7 @@
       <!-- Email button -->
       <div class="text-center">
         <a class='inline-flex justify-center items-center gap-x-3 text-center bg-blue hover:bg-[#2b88ca] border border-transparent text-sm max-sm:w-full lg:text-base text-white font-medium rounded-[4px] focus:outline-none focus:ring-2 focus:ring-blue focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:focus:ring-offset-gray-800 mt-10'
-          href='https://github.com/OsmanTolo?tab=repositories'>
+          href='mailto:dumbuyaosman@icloud.com' target=”_blank”>
           Say Hello
           <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960"
             width="48">
@@ -612,16 +627,68 @@
   <footer
     class="flex flex-col justify-between sm:flex-row sm:justify-between items-center gap-2 text-xs sm:text-sm py-8">
     <p>Design & Built by Osman Dumbuya</p>
-    <ul class='flex gap-2 text-blue'>
+    <ul class='flex gap-4 text-blue'>
       <li>
-        <a href='https://www.linkedin.com/in/osman-dumbuya-148581108/' class="hover:underline"
-          target=”_blank”>LinkedIn</a>
+        <a href='https://www.linkedin.com/in/osman-dumbuya-148581108/'
+          class="opacity-60 hover:opacity-100 flex gap-2 items-center justify-center" target=”_blank”>
+          <svg class="w-5 h-5" fill="#0094ff" height="200px" width="200px" version="1.1" id="Layer_1"
+            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-143 145 512 512"
+            xml:space="preserve">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <path
+                d="M329,145h-432c-22.1,0-40,17.9-40,40v432c0,22.1,17.9,40,40,40h432c22.1,0,40-17.9,40-40V185C369,162.9,351.1,145,329,145z M41.4,508.1H-8.5V348.4h49.9V508.1z M15.1,328.4h-0.4c-18.1,0-29.8-12.2-29.8-27.7c0-15.8,12.1-27.7,30.5-27.7 c18.4,0,29.7,11.9,30.1,27.7C45.6,316.1,33.9,328.4,15.1,328.4z M241,508.1h-56.6v-82.6c0-21.6-8.8-36.4-28.3-36.4 c-14.9,0-23.2,10-27,19.6c-1.4,3.4-1.2,8.2-1.2,13.1v86.3H71.8c0,0,0.7-146.4,0-159.7h56.1v25.1c3.3-11,21.2-26.6,49.8-26.6 c35.5,0,63.3,23,63.3,72.4V508.1z">
+              </path>
+            </g>
+          </svg>
+        </a>
       </li>
       <li>
-        <a href='https://github.com/OsmanTolo' class="hover:underline" target=”_blank”>Github</a>
+        <a href='https://twitter.com/OsmanTolo_' class="opacity-60 hover:opacity-100" target=”_blank”>
+          <svg class="w5 h-5" viewBox="0 -2 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" fill="#0094ff" stroke="#0094ff">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <title>twitter [#154]</title>
+              <desc>Created with Sketch.</desc>
+              <defs> </defs>
+              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="Dribbble-Light-Preview" transform="translate(-60.000000, -7521.000000)" fill="#0094ff">
+                  <g id="icons" transform="translate(56.000000, 160.000000)">
+                    <path
+                      d="M10.29,7377 C17.837,7377 21.965,7370.84365 21.965,7365.50546 C21.965,7365.33021 21.965,7365.15595 21.953,7364.98267 C22.756,7364.41163 23.449,7363.70276 24,7362.8915 C23.252,7363.21837 22.457,7363.433 21.644,7363.52751 C22.5,7363.02244 23.141,7362.2289 23.448,7361.2926 C22.642,7361.76321 21.761,7362.095 20.842,7362.27321 C19.288,7360.64674 16.689,7360.56798 15.036,7362.09796 C13.971,7363.08447 13.518,7364.55538 13.849,7365.95835 C10.55,7365.79492 7.476,7364.261 5.392,7361.73762 C4.303,7363.58363 4.86,7365.94457 6.663,7367.12996 C6.01,7367.11125 5.371,7366.93797 4.8,7366.62489 L4.8,7366.67608 C4.801,7368.5989 6.178,7370.2549 8.092,7370.63591 C7.488,7370.79836 6.854,7370.82199 6.24,7370.70483 C6.777,7372.35099 8.318,7373.47829 10.073,7373.51078 C8.62,7374.63513 6.825,7375.24554 4.977,7375.24358 C4.651,7375.24259 4.325,7375.22388 4,7375.18549 C5.877,7376.37088 8.06,7377 10.29,7376.99705"
+                      id="twitter-[#154]"></path>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </a>
       </li>
       <li>
-        <a href='https://twitter.com/OsmanTolo_' class="hover:underline" target=”_blank”>Twitter</a>
+        <a href='https://github.com/OsmanTolo' class="opacity-60 hover:opacity-100" target=”_blank”>
+          <svg class="w5 h-5" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <title>github [#142]</title>
+              <desc>Created with Sketch.</desc>
+              <defs> </defs>
+              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)" fill="#0094ff">
+                  <g id="icons" transform="translate(56.000000, 160.000000)">
+                    <path
+                      d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399"
+                      id="github-[#142]"> </path>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </a>
       </li>
     </ul>
   </footer>
