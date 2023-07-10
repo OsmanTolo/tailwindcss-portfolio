@@ -5,12 +5,26 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    --title-gradient: linear-gradient(90deg, #f4f4f4, #0094ff 33%, #424242);
+  }
+
   html {
     font-family: "Inter", sans-serif;
   }
 }
 
 @layer utilities {
+  .title {
+    display: inline;
+    font-weight: bold;
+    background-image: var(--theme-em-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    place-self: center;
+  }
+
   .nav__link:hover,
   .project-card:hover {
     transform: translate(0, -2px);
