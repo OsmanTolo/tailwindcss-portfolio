@@ -1400,6 +1400,11 @@ html {
   --tw-ring-offset-color: #f4f4f4;
 }
 
+.group:hover .group-hover\:text-blue{
+  --tw-text-opacity: 1;
+  color: rgb(0 148 255 / var(--tw-text-opacity));
+}
+
 .hs-collapse.open .hs-collapse-open\:block{
   display: block;
 }
@@ -1535,6 +1540,11 @@ html {
   .dark\:hover\:text-white:hover{
     --tw-text-opacity: 1;
     color: rgb(244 244 244 / var(--tw-text-opacity));
+  }
+
+  .dark\:hover\:text-gray-400:hover{
+    --tw-text-opacity: 1;
+    color: rgb(156 163 175 / var(--tw-text-opacity));
   }
 
   .dark\:focus\:ring-gray-700:focus{
